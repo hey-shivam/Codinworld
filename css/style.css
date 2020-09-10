@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Metal+Mania&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=PT+Sans+Narrow&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* Navbar Start */
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    cursor: pointer;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 18px;
+}
+
+.nav-list{
+width: 50%;
+ display: flex;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+}
+
+.nav-list li :hover{
+    text-decoration: underline;
+    color: tomato;
+    
+}
+ul li{
+    padding: 20px;
+    display: flex;
+    align-items:center;
+    list-style: none;
+    }
+
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 37%;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 3px;
+}
+
+.right-nav{
+    width: 50%;
+    text-align: right;
+    padding: 20px;
+}
+
+#search{
+    border: 3px solid grey;
+    border-radius: 8px;
+    font-size: 15px;
+    padding: 5px;
+}
+.background{
+    background-color: rgb(0, 0, 0,0.7);
+    background-image: url('../image/bg4.jpg');
+    background-size: cover;
+    background-blend-mode: darken;
+}
+/* Navbar End */
+
+/* First Section Start */
+.FirstSection{
+    height: 100vh;
+    /* border: 2px solid red; */
+}
+
+.box-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    max-width: 60%;
+    margin: auto;
+    height: 80%;   
+    /* border: 2px solid white; */
+}
+.FirstHalf{
+    width: 80%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+}
+
+#services{
+    display: block;
+    text-align: center;
+    font-size:38px ;
+    font-family: 'Metal Mania', cursive;
+}
+
+.text-big{
+    font-size: 36px;
+    font-family: 'Metal Mania', cursive;
+}
+
+.text-small{
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'Bellota', cursive;
+}
+
+.SecondHalf{
+    margin:0px 15px;
+    width: 20%;
+}
+
+.SecondHalf img {
+    border-radius: 15px;
+    width: 100%;
+    border: 2px solid white
+}
+
+.sm-btn{
+    padding: 5px 15px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin: 0px 5px;
+    vertical-align: middle;
+    font-family: 'Metal Mania', cursive;
+}
+
+.btn{
+    padding: 10px 15px;
+    margin: 10px 10px;
+    border: 3px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    cursor: pointer;
+    margin: 0px 5px;
+    font-family: 'Metal Mania', cursive;
+}
+
+.btn-dark{
+    color: grey;
+    border: 2px solid grey;
+    width: 15%;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    background-color: white;
+}
+/* First Section End */
+
+/* Second Section Start */
+.SecondSection{
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    margin: auto;
+    max-width: 80%;
+    height: 400px;
+    /* background-color: lightcyan; */
+    
+}
+.para{
+    width: 80%;
+    padding: 0 50px;
+}
+.thumbnail{
+    width: 20%;
+}
+.thumbnail img{
+    border-radius: 20px;
+    border: 2px solid black;
+    width: 100%;
+}
+
+.section{
+    padding: 16px 0px;
+}
+
+.Section-left{
+    flex-direction: row-reverse;
+    /* background-color:rgb(238, 213, 217); */
+}
+
+.SecondHalf img{
+    background: white;
+}
+
+hr{
+    width: 70%;
+    margin: auto;
+}
+/* Second Section End */
+
+/* Contact Page Start */
+.contact{
+    background-color: rgb(232, 224, 246);
+    font-family: 'Metal Mania', cursive;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    /* text-align: center; */
+    /* justify-content: center; */
+    margin: auto;
+    height: 400px;
+    font-family: 'Metal Mania', cursive;
+    
+}
+.form-area{
+    padding: 10px;
+    margin-top: 12px;
+    font-family: 'Bellota', cursive;
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+h1{
+    text-align: center;
+    font-size: 25px;
+}
+/* Contact Page End */
+
+/* Footer Start */
+footer {
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 18px;
+}
+/* Footer End */
+
+.burger{
+    position: absolute;
+    cursor: pointer;
+    right : 4%;
+    top: 10px;
+    display: none;
+
+}
+
+.line{
+    width: 33px;
+    background-color: white;
+    height: 4px;
+    margin: 3px 3px;
+}
+
